@@ -1,0 +1,214 @@
+body {
+    
+    margin: 0;
+    background-color: #f5efe6;
+    color: #3e2723;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #6f4e37;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #4e342e;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 60px;
+    text-align: center;
+}
+
+.menu {
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.card:hover {
+    background-color: #efebe9;
+}
+
+.card2 {
+    background: rgba(255, 255, 255, 0.671);
+    padding: 20px;
+    margin: 25px;
+    
+    justify-content: space-between;
+    border-radius: 8px;
+    height: 300px;
+}
+
+
+
+.content {
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+}
+
+footer {
+    background-color: #4e342e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.para{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.chatbot-container {
+    width: 400px;
+    height: 550px;
+    background: #1e1e2f;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.chat-header {
+    background: #6c63ff;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Chat messages */
+.chat-window {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #2a2a40;
+}
+
+/* Messages */
+.message {
+    margin: 10px 0;
+    padding: 10px 12px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.user {
+    background: #6c63ff;
+    color: white;
+    margin-left: auto;
+}
+
+.bot {
+    background: #444;
+    color: #fff;
+}
+
+/* Input area */
+.chat-input-area {
+    display: flex;
+    border-top: 1px solid #444;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+}
+
+.chat-input-area button {
+    padding: 12px 18px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* ── FIX HERO CENTERING ───────────────────────── */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+/* Fix card2 */
+.card2 {
+    background: rgba(255, 255, 255, 0.671);
+    padding: 20px;
+    margin: 0 auto 30px auto;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    height: auto; /* FIXED */
+}
+
+/* Center chatbot */
+.chatbot-container {
+    width: 400px;
+    height: 550px;
+    margin: 0 auto; /* FIXED */
+}
+
+/* Fix menu alignment */
+.menu {
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Keep cards centered */
+.card {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Improve chat alignment */
+.chat-window {
+    display: flex;
+    flex-direction: column;
+}
+
+.message.user {
+    align-self: flex-end;
+}
+
+.message.bot {
+    align-self: flex-start;
+}

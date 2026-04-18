@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coffee Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Our Coffee Menu</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="bag.html">Bag (<span id="cart-count">0</span>)</a>
+</nav>
+
+<section class="menu">
+    <h2>Hot Coffee</h2>
+    <div class="card">Espresso <span>₹120</span><button onclick="addToBag('Espresso', 120)">Add</button></div>
+    
+    <div class="card">Cappuccino <span>₹150</span><button onclick="addToBag('Cappuccino', 150)">Add</button></div>
+    <div class="card">Latte <span>₹160</span><button onclick="addToBag('Latte', 160)">Add</button></div>
+
+    <h2>Cold Coffee</h2>
+    <div class="card">Iced Latte <span>₹170</span><button onclick="addToBag('Iced Latte', 170)">Add</button></div>
+    <div class="card">Cold Brew <span>₹180</span><button onclick="addToBag('Cold Brew', 180)">Add</button></div>
+
+    <h2>Special Brews</h2>
+    <div class="card">Macchiato <span>₹200</span> <button onclick="addToBag('Macchiato', 200)">Add</button></div>
+    <div class="card">Hazelnut Latte <span>₹210</span><button onclick="addToBag('Hazelnut Latte', 210)">Add</button></div>
+</section>
+
+<footer>
+    <p>Freshly brewed, always.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Bag - Café Aroma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Your Bag</h1></header>
+
+    
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="bag.html">Bag (<span id="cart-count">0</span>)</a>
+</nav>
+
+    <section class="content">
+        <div id="cart-items">
+            </div>
+        <h3>Total: ₹<span id="total-price">0</span></h3>
+
+        <hr>
+        <h3>Checkout (Cash on Delivery)</h3>
+        <input type="text" id="custName" placeholder="Your Name" required><br><br>
+        <textarea id="custAddress" placeholder="Delivery Address" required></textarea><br><br>
+        <button onclick="placeOrder()">Place Order</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
